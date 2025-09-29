@@ -1,0 +1,24 @@
+{
+  "name": "@searchmindai/sdk",
+  "version": "0.0.2",
+  "description": "SearchMind AI SDK - A powerful JavaScript/TypeScript SDK for integrating AI-powered search capabilities with advanced filtering, result processing, and search optimization features.",
+  "keywords": [
+    "search",
+    "ai",
+    "artificial intelligence",
+    "search filters",
+    "searchmind",
+    "sdk",
+    "typescript",
+    "javascript",
+    "search api",
+    "machine learning",
+    "relevance",
+    "analytics"
+  ],
+  "author": "SearchMind AI",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
