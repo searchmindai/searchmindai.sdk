@@ -1,24 +1,39 @@
 {
   "name": "@searchmindai/sdk",
   "version": "0.0.2",
-  "description": "SearchMind AI SDK - A powerful JavaScript/TypeScript SDK for integrating AI-powered search capabilities with advanced filtering, result processing, and search optimization features.",
-  "keywords": [
-    "search",
-    "ai",
-    "artificial intelligence",
-    "search filters",
-    "searchmind",
-    "sdk",
-    "typescript",
-    "javascript",
-    "search api",
-    "machine learning",
-    "relevance",
-    "analytics"
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
   ],
-  "author": "SearchMind AI",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.8.0",
+    "@types/node": "^24.7.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "preact": "^10.19.0",
+    "sass-embedded": "^1.93.2",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.0"
   }
 }
