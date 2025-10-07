@@ -1,7 +1,7 @@
 // src/main.tsx
 import { render } from "preact";
 import { Button } from "./components";
-import "./styles/main.scss";
+import "./styles/main.css";
 
 function App() {
   return (

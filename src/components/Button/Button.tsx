@@ -1,6 +1,6 @@
 // src/components/Button/Button.tsx
 import { type JSX } from "preact";
-import styles from "./Button.module.scss";
+import styles from "./Button.module.css";
 
 interface ButtonProps {
   children: JSX.Element | string;
