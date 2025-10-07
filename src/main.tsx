@@ -1,4 +1,3 @@
-// src/main.tsx
 import { render } from "preact";
 import { Button } from "./components";
 import "./styles/main.css";
