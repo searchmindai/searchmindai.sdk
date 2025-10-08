@@ -4,18 +4,18 @@
 ![License](https://img.shields.io/npm/l/@searchmindai/sdk?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square)
 
-SearchMind AI SDK - Uma biblioteca poderosa de componentes React/TypeScript para integrar capacidades de busca com IA, incluindo processamento avançado de resultados, filtragem e otimização de busca.
+SearchMind AI SDK - Una potente biblioteca de componentes React/TypeScript para integrar capacidades de búsqueda con IA, incluyendo procesamiento avanzado de resultados, filtrado y optimización de búsqueda.
 
 ## 🚀 Características
 
-- ⚡ **Otimizado para Performance** - Construído com Preact para bundle size mínimo
-- 🎨 **Componentes Estilizados** - CSS Modules para estilos isolados e personalizáveis
-- 🔧 **TypeScript First** - Tipagem completa para melhor experiência de desenvolvimento
-- 📦 **Tree Shakeable** - Importe apenas os componentes que você precisa
-- ⚛️ **React Compatible** - Funciona com React 16.8+, 17.x e 18.x
-- 🎯 **Modular** - Arquitetura baseada em componentes para máxima flexibilidade
+- ⚡ **Optimizado para Rendimiento** - Construido con Preact para un bundle size mínimo
+- 🎨 **Componentes Estilizados** - CSS Modules para estilos aislados y personalizables
+- 🔧 **TypeScript First** - Tipado completo para una mejor experiencia de desarrollo
+- 📦 **Tree Shakeable** - Importa solo los componentes que necesitas
+- ⚛️ **Compatible con React** - Funciona con React 16.8+, 17.x y 18.x
+- 🎯 **Modular** - Arquitectura basada en componentes para máxima flexibilidad
 
-## 📦 Instalação
+## 📦 Instalación
 
 ```bash
 # npm
@@ -30,7 +30,7 @@ pnpm add @searchmindai/sdk
 
 ## 🎯 Uso Básico
 
-### Importação
+### Importación
 
 ```typescript
 import { Button } from '@searchmindai/sdk';
@@ -45,17 +45,17 @@ import { Button } from '@searchmindai/sdk';
 
 function App() {
   const handleClick = () => {
-    console.log('Botão clicado!');
+    console.log('¡Botón clickeado!');
   };
 
   return (
     <div>
-      {/* Botão primário */}
+      {/* Botón primario */}
       <Button onClick={handleClick}>
         Buscar
       </Button>
 
-      {/* Botão secundário */}
+      {/* Botón secundario */}
       <Button variant="secondary" onClick={handleClick}>
         Cancelar
       </Button>
@@ -64,85 +64,85 @@ function App() {
 }
 ```
 
-## 📚 API Reference
+## 📚 Referencia de API
 
 ### Button
 
-Um componente de botão versátil com variantes de estilo.
+Un componente de botón versátil con variantes de estilo.
 
 #### Props
 
-| Prop | Tipo | Padrão | Descrição |
-|------|------|---------|-----------|
-| `children` | `JSX.Element \| string` | - | Conteúdo do botão |
-| `onClick` | `() => void` | - | Função chamada ao clicar no botão |
-| `variant` | `"primary" \| "secondary"` | `"primary"` | Variante visual do botão |
+| Prop | Tipo | Por defecto | Descripción |
+|------|------|-------------|-------------|
+| `children` | `JSX.Element \| string` | - | Contenido del botón |
+| `onClick` | `() => void` | - | Función llamada al hacer clic en el botón |
+| `variant` | `"primary" \| "secondary"` | `"primary"` | Variante visual del botón |
 
-#### Exemplo
+#### Ejemplo
 
 ```tsx
-// Botão primário (padrão)
-<Button onClick={() => alert('Clicado!')}>
-  Botão Primário
+// Botón primario (por defecto)
+<Button onClick={() => alert('¡Clickeado!')}>
+  Botón Primario
 </Button>
 
-// Botão secundário
-<Button variant="secondary" onClick={() => console.log('Secundário')}>
-  Botão Secundário
+// Botón secundario
+<Button variant="secondary" onClick={() => console.log('Secundario')}>
+  Botón Secundario
 </Button>
 ```
 
-## 🎨 Customização de Estilos
+## 🎨 Personalización de Estilos
 
-O SDK utiliza CSS Modules para isolamento de estilos. Você pode personalizar os estilos sobrescrevendo as classes CSS:
+El SDK utiliza CSS Modules para aislamiento de estilos. Puedes personalizar los estilos sobrescribiendo las clases CSS:
 
 ```css
-/* Personalizando o botão primário */
+/* Personalizando el botón primario */
 .btn--primary {
   background-color: #your-color !important;
   border-radius: 8px !important;
 }
 
-/* Personalizando o botão secundário */
+/* Personalizando el botón secundario */
 .btn--secondary {
   background-color: #your-secondary-color !important;
 }
 ```
 
-## 🛠️ Desenvolvimento
+## 🛠️ Desarrollo
 
-### Pré-requisitos
+### Prerrequisitos
 
 - Node.js 16+
-- npm, yarn ou pnpm
+- npm, yarn o pnpm
 
-### Setup Local
+### Configuración Local
 
 ```bash
-# Clone o repositório
+# Clona el repositorio
 git clone https://github.com/searchmindai/searchmind.sdk.git
 cd searchmind.sdk
 
-# Instale as dependências
+# Instala las dependencias
 npm install
 
-# Execute em modo de desenvolvimento
+# Ejecuta en modo de desarrollo
 npm run dev
 
-# Build para produção
+# Build para producción
 npm run build
 
-# Preview do build
+# Preview del build
 npm run preview
 ```
 
-### Scripts Disponíveis
+### Scripts Disponibles
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Constrói a biblioteca para produção
-- `npm run preview` - Visualiza o build de produção
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la biblioteca para producción
+- `npm run preview` - Visualiza el build de producción
 
-### Estrutura do Projeto
+### Estructura del Proyecto
 
 ```text
 searchmind.sdk/
@@ -151,48 +151,48 @@ searchmind.sdk/
 │   │   ├── Button/         # Componente Button
 │   │   │   ├── Button.tsx
 │   │   │   └── Button.module.css
-│   │   └── index.ts        # Exports dos componentes
-│   ├── styles/             # Estilos globais
+│   │   └── index.ts        # Exports de los componentes
+│   ├── styles/             # Estilos globales
 │   │   └── main.css
-│   ├── types/              # Definições de tipos
+│   ├── types/              # Definiciones de tipos
 │   │   ├── global.d.ts
 │   │   └── files.d.ts
 │   ├── index.ts            # Entry point principal
-│   └── main.tsx            # Demo/desenvolvimento
-├── dist/                   # Build de produção
-├── public/                 # Arquivos estáticos
+│   └── main.tsx            # Demo/desarrollo
+├── dist/                   # Build de producción
+├── public/                 # Archivos estáticos
 └── package.json
 ```
 
-## 🔧 Configuração
+## 🔧 Configuración
 
 ### TypeScript
 
-O projeto está configurado com TypeScript strict mode e inclui:
+El proyecto está configurado con TypeScript strict mode e incluye:
 
-- Suporte para JSX/TSX
+- Soporte para JSX/TSX
 - Path mapping para React → Preact
-- Definições de tipos globais
-- Build otimizado para bibliotecas
+- Definiciones de tipos globales
+- Build optimizado para bibliotecas
 
 ### Vite
 
-Configuração otimizada para construção de bibliotecas:
+Configuración optimizada para construcción de bibliotecas:
 
 - Build dual (ESM + CommonJS)
-- Geração automática de tipos
+- Generación automática de tipos
 - Tree shaking
-- CSS code splitting desabilitado para simplicidade
+- CSS code splitting deshabilitado para simplicidad
 
-## 📋 Compatibilidade
+## 📋 Compatibilidad
 
-### React Versions
+### Versiones de React
 
 - ✅ React 16.8+
 - ✅ React 17.x
 - ✅ React 18.x
 
-### Browsers
+### Navegadores
 
 - ✅ Chrome 90+
 - ✅ Firefox 88+
@@ -205,28 +205,28 @@ Configuração otimizada para construção de bibliotecas:
 - ✅ Node.js 18+
 - ✅ Node.js 20+
 
-## 🤝 Contribuindo
+## 🤝 Contribuyendo
 
-Contribuições são bem-vindas! Por favor, leia o [guia de contribuição](CONTRIBUTING.md) antes de submeter PRs.
+¡Las contribuciones son bienvenidas! Por favor, lee la [guía de contribución](CONTRIBUTING.md) antes de enviar PRs.
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Haz push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-## 📄 Licença
+## 📄 Licencia
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
-## 🔗 Links Úteis
+## 🔗 Enlaces Útiles
 
-- [Documentação](https://docs.searchmind.ai)
-- [NPM Package](https://www.npmjs.com/package/@searchmindai/sdk)
-- [GitHub Repository](https://github.com/searchmindai/searchmind.sdk)
+- [Documentación](https://docs.searchmind.ai)
+- [Paquete NPM](https://www.npmjs.com/package/@searchmindai/sdk)
+- [Repositorio GitHub](https://github.com/searchmindai/searchmind.sdk)
 - [Issues](https://github.com/searchmindai/searchmind.sdk/issues)
 
-## 📞 Suporte
+## 📞 Soporte
 
 - 📧 Email: [support@searchmind.ai](mailto:support@searchmind.ai)
 - 💬 Discord: [SearchMind Community](https://discord.gg/searchmind)
@@ -234,4 +234,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ---
 
-Feito com ❤️ pela equipe [SearchMind AI](https://searchmind.ai)
+Hecho con ❤️ por el equipo [SearchMind AI](https://searchmind.ai)
