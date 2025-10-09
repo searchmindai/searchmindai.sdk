@@ -1,5 +1,5 @@
+import { Button } from "@searchmindai/ui";
 import { render } from "preact";
-import { Button } from "./components";
 import "./styles/main.css";
 
 function App() {
