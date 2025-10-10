@@ -1,1 +1,1 @@
-export { SearchPageContext } from "./SearchPageContext/SearchPageContext";
+export { SearchPageContext } from "./SearchPageContext/SearchPageContext.js";
