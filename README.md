@@ -1,19 +1,21 @@
 # @searchmindai/sdk
 
+SearchMind AI SDK - Una potente biblioteca de componentes React/TypeScript para integrar capacidades de búsqueda con IA, incluyendo procesamiento avanzado de resultados, filtrado y optimización de búsqueda.
+
 ![Version](https://img.shields.io/npm/v/@searchmindai/sdk?style=flat-square)
 ![License](https://img.shields.io/npm/l/@searchmindai/sdk?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square)
 
-SearchMind AI SDK - Una potente biblioteca de componentes React/TypeScript para integrar capacidades de búsqueda con IA, incluyendo procesamiento avanzado de resultados, filtrado y optimización de búsqueda.
+## ⚠️ Estado de Desarrollo
 
-## 🚀 Características
+**IMPORTANTE: Esta NO es la versión final del SDK. Actualmente estamos en fase de PRUEBAS.**
 
-- ⚡ **Optimizado para Rendimiento** - Construido con Preact para un bundle size mínimo
-- 🎨 **Componentes Estilizados** - CSS Modules para estilos aislados y personalizables
-- 🔧 **TypeScript First** - Tipado completo para una mejor experiencia de desarrollo
-- 📦 **Tree Shakeable** - Importa solo los componentes que necesitas
-- ⚛️ **Compatible con React** - Funciona con React 16.8+, 17.x y 18.x
-- 🎯 **Modular** - Arquitectura basada en componentes para máxima flexibilidad
+Los componentes incluidos en esta versión **NO están listos para ser utilizados en producción**. Esta es una versión de desarrollo destinada únicamente para pruebas internas y feedback de desarrolladores.
+
+### 📅 Cronograma de Lanzamiento
+
+- **Fecha prevista para el lanzamiento BETA**: **13 de octubre de 2025 a las 15:00 (hora de Chile)**
+- **Estado actual**: Fase de pruebas y desarrollo activo
 
 ## 📦 Instalación
 
@@ -64,20 +66,6 @@ function App() {
 }
 ```
 
-## 📚 Referencia de API
-
-### Button
-
-Un componente de botón versátil con variantes de estilo.
-
-#### Props
-
-| Prop | Tipo | Por defecto | Descripción |
-|------|------|-------------|-------------|
-| `children` | `JSX.Element \| string` | - | Contenido del botón |
-| `onClick` | `() => void` | - | Función llamada al hacer clic en el botón |
-| `variant` | `"primary" \| "secondary"` | `"primary"` | Variante visual del botón |
-
 #### Ejemplo
 
 ```tsx
@@ -115,54 +103,6 @@ El SDK utiliza CSS Modules para aislamiento de estilos. Puedes personalizar los 
 
 - Node.js 16+
 - npm, yarn o pnpm
-
-### Configuración Local
-
-```bash
-# Clona el repositorio
-git clone https://github.com/searchmindai/searchmind.sdk.git
-cd searchmind.sdk
-
-# Instala las dependencias
-npm install
-
-# Ejecuta en modo de desarrollo
-npm run dev
-
-# Build para producción
-npm run build
-
-# Preview del build
-npm run preview
-```
-
-### Scripts Disponibles
-
-- `npm run dev` - Inicia el servidor de desarrollo
-- `npm run build` - Construye la biblioteca para producción
-- `npm run preview` - Visualiza el build de producción
-
-### Estructura del Proyecto
-
-```text
-searchmind.sdk/
-├── src/
-│   ├── components/          # Componentes React
-│   │   ├── Button/         # Componente Button
-│   │   │   ├── Button.tsx
-│   │   │   └── Button.module.css
-│   │   └── index.ts        # Exports de los componentes
-│   ├── styles/             # Estilos globales
-│   │   └── main.css
-│   ├── types/              # Definiciones de tipos
-│   │   ├── global.d.ts
-│   │   └── files.d.ts
-│   ├── index.ts            # Entry point principal
-│   └── main.tsx            # Demo/desarrollo
-├── dist/                   # Build de producción
-├── public/                 # Archivos estáticos
-└── package.json
-```
 
 ## 🔧 Configuración
 
@@ -219,19 +159,6 @@ Configuración optimizada para construcción de bibliotecas:
 
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
-## 🔗 Enlaces Útiles
-
-- [Documentación](https://docs.searchmind.ai)
-- [Paquete NPM](https://www.npmjs.com/package/@searchmindai/sdk)
-- [Repositorio GitHub](https://github.com/searchmindai/searchmind.sdk)
-- [Issues](https://github.com/searchmindai/searchmind.sdk/issues)
-
-## 📞 Soporte
-
-- 📧 Email: [support@searchmind.ai](mailto:support@searchmind.ai)
-- 💬 Discord: [SearchMind Community](https://discord.gg/searchmind)
-- 🐛 Issues: [GitHub Issues](https://github.com/searchmindai/searchmind.sdk/issues)
-
 ---
 
-Hecho con ❤️ por el equipo [SearchMind AI](https://searchmind.ai)
+Hecho con ❤️ y mucho ☕️ por el equipo [SearchMind AI](https://searchmind.ai)
