@@ -1,2 +1,2 @@
-export * from "./components";
-import "./styles/main.css";
+export * from "./components/index";
+import "./styles/main.css?inline";

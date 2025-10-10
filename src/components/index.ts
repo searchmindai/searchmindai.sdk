@@ -1,1 +1,1 @@
-export { Button } from "./Button/Button";
+export { SearchPageContext } from "./SearchPageContext/SearchPageContext";

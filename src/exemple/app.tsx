@@ -1,5 +1,5 @@
-import { Button } from "../components";
+import { SearchPageContext } from "../components";
 
 export default function App() {
-  return <Button variant="secondary">Botão Secundário</Button>;
+  return <SearchPageContext />;
 }
