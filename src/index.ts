@@ -1,1 +1,1 @@
-export * from "./components/index.js";
+export { SearchPageContext } from "./components/SearchPageContext/SearchPageContext.js";
