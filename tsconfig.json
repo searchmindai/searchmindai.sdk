@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "moduleResolution": "bundler",
+    "target": "es2020"
   },
   "files": [],
   "references": [

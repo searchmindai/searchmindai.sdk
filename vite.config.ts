@@ -7,16 +7,7 @@ import dts from "vite-plugin-dts";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-	plugins: [
-		preact(),
-		dts({
-			insertTypesEntry: true,
-			include: ["src/**/*"],
-			exclude: ["src/**/*.test.*", "src/**/*.spec.*"],
-			copyDtsFiles: true,
-			rollupTypes: true,
-		}),
-	],
+	plugins: [preact(), dts({ insertTypesEntry: true, tsconfigPath: "./tsconfig.app.json" })],
 	build: {
 		lib: {
 			entry: resolve(__dirname, "src/index.ts"),
@@ -31,12 +22,17 @@ export default defineConfig({
 					react: "React",
 					"react-dom": "ReactDOM",
 				},
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name === "style.css") return "ui.css";
+					return assetInfo.name!;
+				},
 			},
 		},
 		cssCodeSplit: false,
 	},
 	resolve: {
 		alias: {
+			"@": resolve(__dirname, "./src"),
 			react: "preact/compat",
 			"react-dom": "preact/compat",
 			"react/jsx-runtime": "preact/jsx-runtime",
